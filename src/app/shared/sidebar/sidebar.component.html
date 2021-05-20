@@ -1,0 +1,8 @@
+<aside class=" aside d-flex flex-column align-items-center">
+    <h3 class="mt-4">Historial</h3>
+    <div class="list-group mt-md-3 mt-sm-0">
+      <a href="#" *ngFor="let item of historial; let i = index" class="list-group-item list-group-item-icon m-1" (click)="getHistorial(i)">
+        {{item |titlecase}}
+      </a>
+    </div>
+  </aside>

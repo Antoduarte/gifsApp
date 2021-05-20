@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+.aside{
+    position: fixed;
+    z-index: 100;
+    height: 100vh;
+    background: rgb(238, 236, 236);
+    width: 290px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: none;
+}
+.container{
+    margin-left: 300px !important;
+}
+
+
+@media (max-width: 768px){
+.aside{
+    height:auto;
+    width: 100%;
+    top:0;
+}
+
+.list-group{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container{
+    margin-top: 190px;
+    margin-left: auto !important;
+}
+}
